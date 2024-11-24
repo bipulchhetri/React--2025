@@ -1,0 +1,22 @@
+[
+    {
+        "img":"https://images.squarespace-cdn.com/content/v1/5489b1f6e4b0c7fbb9e64fcb/1624052013060-Q95Y1VII33SLD2R766T5/ecmas6_2.png",
+        "name": "ES6 CONCEPT",
+        "id" : 1,
+        "description": "This is a description of ES6 CONCEPT"   ,
+
+        "button":"Read More"
+    },
+    {
+        "name": "React Basics",
+        "id" : 2,
+       "description":"React is a JavaScript library for building user interfaces.",
+        "button":"Read More"
+    },
+    {
+        "name": "hfg CONCEPT",
+        "id" : 3,
+        "description": "This is a description of ES6 CONCEPT"   ,
+        "button":"Read More"
+    }
+]
