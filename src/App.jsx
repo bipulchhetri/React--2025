@@ -1,5 +1,6 @@
 import React from "react";
 import Course from "./component/Course";
+
 export const App = () => {
   return (
     <>
@@ -8,6 +9,7 @@ export const App = () => {
 
 <Course/>
 <h2>ghjklds</h2>
+
     </>
   );
 };
