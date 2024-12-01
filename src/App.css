@@ -8,3 +8,10 @@
  h1{
   color: red;
 }
+.btn{
+  background-color: red;
+  margin: 5px ;
+  padding: 10px;
+  border: none;
+  border-radius:5px;
+}

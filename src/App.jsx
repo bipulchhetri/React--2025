@@ -1,5 +1,8 @@
 import React from "react";
 import Course from "./component/Course";
+import { EventHandler } from "./component/EventHandler";
+import { Eventprop } from "./component/Eventprop";
+// import { Eventchild, Eventprop } from "./component/Eventprop";
 
 export const App = () => {
   return (
@@ -8,8 +11,9 @@ export const App = () => {
   <Course name={'Eye of Man'} rating={`Rating 5.2`} /> */}
 
 <Course/>
-<h2>ghjklds</h2>
-
+<EventHandler/>
+{/* <Eventchild/> */}
+<Eventprop/>
     </>
   );
 };
