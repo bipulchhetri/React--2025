@@ -1,0 +1,15 @@
+input{
+    padding: 5px;
+    border: 2px solid black;
+    width: 300px;
+}
+input::placeholder{
+    color: red;
+    opacity: 0.5;
+    font: 1em sans-serif;
+}
+p{
+    background-color: aqua;
+    font-size: 24px;
+    font-weight: bold;
+}
