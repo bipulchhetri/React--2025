@@ -1,0 +1,36 @@
+h1{
+    color: rgb(229, 34, 24);
+}
+p{
+    background-color: white;
+    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+ input {
+    width: 95%;
+    padding: 5px;
+    margin: 10px;
+    font-size: 20px;
+ }
+ button{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+ }
+ button:hover{
+    background-color: white;
+    color: red;
+    transform: 1px ;
+ }

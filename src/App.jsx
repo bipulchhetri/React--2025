@@ -4,6 +4,7 @@ import { EventHandler } from "./component/EventHandler";
 import { Eventprop } from "./component/Eventprop";
 import StateL from "./component/StateL";
 import { Toggle } from "./Projects/Toggle";
+import HookCh from "./Projects/HookCh";
 // import { Eventchild, Eventprop } from "./component/Eventprop";
 
 export const App = () => {
@@ -16,8 +17,9 @@ export const App = () => {
 {/* <EventHandler/> */}
 {/* <Eventchild/> */}
 {/* <Eventprop/> */}
-<StateL/>
-<Toggle/>
+{/* <StateL/>
+<Toggle/> */}
+<HookCh/>
     </>
   );
 };
