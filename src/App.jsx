@@ -7,6 +7,7 @@ import { Toggle } from "./Projects/Toggle";
 import HookCh from "./Projects/HookCh";
 import Registration from "./Projects/Registration";
 import { Login } from "./Projects/Login";
+import Propdriling from "./component/Propdriling";
 // import { Eventchild, Eventprop } from "./component/Eventprop";
 
 export const App = () => {
@@ -18,12 +19,13 @@ export const App = () => {
 {/* <Course/> */}
 {/* <EventHandler/> */}
 {/* <Eventchild/> */}
-{/* <Eventprop/> */}
+{/* <Eventprop/> */}s
 {/* <StateL/>
 <Toggle/> */}
 {/* <HookCh/> */}
 {/* <Registration/> */}
-<Login/>
+{/* <Login/> */}
+<Propdriling/>
     </>
   );
 };
