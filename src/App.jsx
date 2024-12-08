@@ -8,6 +8,8 @@ import HookCh from "./Projects/HookCh";
 import Registration from "./Projects/Registration";
 import { Login } from "./Projects/Login";
 import Propdriling from "./component/Propdriling";
+import { Bio, Bioprovider } from "./Hooks/ContextApi";
+import Home from "./Hooks/ContextApi/Home";
 // import { Eventchild, Eventprop } from "./component/Eventprop";
 
 export const App = () => {
@@ -25,7 +27,11 @@ export const App = () => {
 {/* <HookCh/> */}
 {/* <Registration/> */}
 {/* <Login/> */}
-<Propdriling/>
+{/* <Propdriling/> */}
+<Bioprovider>
+  <Home/>
+  
+</Bioprovider>
     </>
   );
 };
