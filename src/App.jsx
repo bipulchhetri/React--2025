@@ -10,6 +10,7 @@ import { Login } from "./Projects/Login";
 import Propdriling from "./component/Propdriling";
 import { Bio, Bioprovider } from "./Hooks/ContextApi";
 import Home from "./Hooks/ContextApi/Home";
+import CrudComponent from "./Projects/CrudComponent";
 // import { Eventchild, Eventprop } from "./component/Eventprop";
 
 export const App = () => {
@@ -21,18 +22,21 @@ export const App = () => {
 {/* <Course/> */}
 {/* <EventHandler/> */}
 {/* <Eventchild/> */}
-{/* <Eventprop/> */}s
+{/* <Eventprop/> */}
 {/* <StateL/>
 <Toggle/> */}
 {/* <HookCh/> */}
 {/* <Registration/> */}
 {/* <Login/> */}
 {/* <Propdriling/> */}
-<Bioprovider>
+{/* <Bioprovider>
   <Home/>
   
-</Bioprovider>
+</Bioprovider> */}
+<CrudComponent/>
     </>
   );
 };
 
+
+export default App;
