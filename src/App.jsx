@@ -45,12 +45,13 @@
 // Revsion App started
 
 import React from 'react'
+import { Learn } from './LearnJSX/Learn'
 
 const App = () => {
   return (
   
 <>
-<h1>hjgfjh</h1>
+<Learn/>
 </>
 
   )
