@@ -45,13 +45,12 @@
 // Revsion App started
 
 import React from 'react'
-import UseState from './Hookes-All/UseState'
 
 const App = () => {
   return (
   
 <>
-<UseState/>
+<h1>hjgfjh</h1>
 </>
 
   )
