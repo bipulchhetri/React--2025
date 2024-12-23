@@ -46,12 +46,14 @@
 
 import React from 'react'
 import { Learn } from './LearnJSX/Learn'
+import { Map } from './Map&Loop/Map'
 
 const App = () => {
   return (
   
 <>
-<Learn/>
+{/* <Learn/> */}
+<Map/>
 </>
 
   )
