@@ -47,13 +47,15 @@
 import React from 'react'
 import { Learn } from './LearnJSX/Learn'
 import { Map } from './Map&Loop/Map'
+import { Parent } from './LearnComponent/Parent'
 
 const App = () => {
   return (
   
 <>
 {/* <Learn/> */}
-<Map/>
+{/* <Map/> */}
+<Parent/>
 </>
 
   )

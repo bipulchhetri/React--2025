@@ -9,6 +9,7 @@
     },
     {
         "name": "React Basics",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgXvo6blePJ_H53860w9iEX_ffwkX90jZMpA&s",
         "id" : 2,
        "description":"React is a JavaScript library for building user interfaces.",
         "button":"Read More"

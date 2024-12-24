@@ -1,16 +1,20 @@
 import coursedata from '../api/coursedata.json'
+import '../index.css'
+import Card from '../Map&Loop/Card'
 export const  Map =()=>{
-    const name=coursedata[1]
-    console.log(name);
+   
     return (
 coursedata.map((course)=>(
-    <ul>
-        <li>{course.name}</li>
-        <li>{course.description}</li>
-<img src={course.img} alt=""
-style={{width:'200px'}}
-/>
-    </ul>
+
+    <Card 
+    key={course.id} 
+    title={course.name} 
+    description={course.description} 
+    // image={course.image} 
+    // duration={course.duration}
+  />
+
+
 ))
     )
 }
