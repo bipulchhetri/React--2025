@@ -1,5 +1,5 @@
 import coursedata from '../api/coursedata.json'
-import '../index.css'
+
 import Card from '../Map&Loop/Card'
 export const  Map =()=>{
    
@@ -10,7 +10,8 @@ coursedata.map((course)=>(
     key={course.id} 
     title={course.name} 
     description={course.description} 
-    // image={course.image} 
+    img={course.img} 
+    button={course.button}
     // duration={course.duration}
   />
 

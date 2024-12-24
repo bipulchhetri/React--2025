@@ -16,6 +16,7 @@
     },
     {
         "name": "hfg CONCEPT",
+        "img":"https://foundr.com/wp-content/uploads/2023/04/How-to-create-an-online-course.jpg.webp",
         "id" : 3,
         "description": "This is a description of ES6 CONCEPT"   ,
         "button":"Read More"

@@ -54,8 +54,8 @@ const App = () => {
   
 <>
 {/* <Learn/> */}
-{/* <Map/> */}
-<Parent/>
+<Map/>
+{/* <Parent/> */}
 </>
 
   )
