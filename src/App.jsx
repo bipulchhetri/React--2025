@@ -48,6 +48,7 @@ import React from 'react'
 import { Learn } from './LearnJSX/Learn'
 import { Map } from './Map&Loop/Map'
 import { Parent } from './LearnComponent/Parent'
+import Event from './Event/Event'
 
 const App = () => {
   return (
@@ -55,6 +56,7 @@ const App = () => {
 <>
 {/* <Learn/> */}
 <Map/>
+<Event/>
 {/* <Parent/> */}
 </>
 
