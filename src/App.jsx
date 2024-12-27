@@ -49,14 +49,16 @@ import { Learn } from './LearnJSX/Learn'
 import { Map } from './Map&Loop/Map'
 import { Parent } from './LearnComponent/Parent'
 import Event from './Event/Event'
+import FruitshopEvent from './Event/FruitshopEvent'
 
 const App = () => {
   return (
   
 <>
 {/* <Learn/> */}
-<Map/>
-<Event/>
+{/* <Map/>
+<Event/> */}
+<FruitshopEvent/>
 {/* <Parent/> */}
 </>
 
