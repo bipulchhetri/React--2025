@@ -50,6 +50,9 @@ import { Map } from './Map&Loop/Map'
 import { Parent } from './LearnComponent/Parent'
 import Event from './Event/Event'
 import FruitshopEvent from './Event/FruitshopEvent'
+import { EventProps } from './Event/EventProps'
+import EventPropagration from './Event/EventPropagration'
+import DerivedS from './State/DerivedS'
 
 const App = () => {
   return (
@@ -58,8 +61,11 @@ const App = () => {
 {/* <Learn/> */}
 {/* <Map/>
 <Event/> */}
-<FruitshopEvent/>
+{/* <FruitshopEvent/> */}
 {/* <Parent/> */}
+{/* <EventProps/> */}
+{/* <EventPropagration/> */}
+<DerivedS/>
 </>
 
   )
