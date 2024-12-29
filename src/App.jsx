@@ -52,7 +52,7 @@ import Event from './Event/Event'
 import FruitshopEvent from './Event/FruitshopEvent'
 import { EventProps } from './Event/EventProps'
 import EventPropagration from './Event/EventPropagration'
-import DerivedS from './State/DerivedS'
+// import DerivedS from './State/DerivedS'
 import Registration from './RegistrationForm/Registration'
 
 const App = () => {

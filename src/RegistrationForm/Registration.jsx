@@ -1,39 +1,70 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
+import "../index.css";  // Import the updated CSS
 
-const Registration = () => {
-    const [data,setdata]=useState({
-        name:" ",
-        lastname:"",
-    }
-       
-    );
-    const handlechange=(e)=>{
-        const {name,value}=e.target;
-        setdata({
-            ...data,[name]:value,
-        })
-    }
+function Registration() {
+  const [data, setData] = useState({
+    name:" ",
+    email:" ",
+  });
 
-    const handlesubmit =(e)=>{
-        e.preventDefault();
-        console.log(data)
-    }
+  const handleChange = (e) => {
+    const {name,value}=e.target;
+    setData({
+        ...data,[name]:value,
+    })
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form Data Submitted:", data);
+  };
+
   return (
-    <div>
-        <h2>REGISTRATION FORM </h2>
-        <form onSubmit={handlesubmit}>
-<div>
-    <label htmlFor="">Name:</label>
-    <input type="text" name='name' id='name' onChange={handlechange} value={data.name}/>
-</div>
-<div>
-    <label htmlFor="">Last Name:</label>
-    <input type="text" name='lastname' id='lastname' onChange={handlechange} value={data.lastname}/>
-</div>
-<button type='submit'>submit</button>
+    <div className="form-wrapper">
+      <div className="form-container">
+        <h2>React Registration Form</h2>
+        <form onSubmit={handleSubmit} className="registration-form">
+          <div className="form-group">
+            <label htmlFor="name" className="form-label">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              value={data.name}
+              onChange={handleChange}
+              className="form-input"
+              placeholder="Enter your name"
+            />
+          </div>
+               <div className="form-group">
+            <label htmlFor="name" className="form-label">Email:</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              value={data.email}
+              onChange={handleChange}
+              className="form-input"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="name" className="form-label">Phone Number:</label>
+            <input
+              type="text"
+              name="number"
+              id="number"
+              value={data.number}
+              onChange={handleChange}
+              className="form-input"
+              placeholder="Enter your name"
+            />
+          </div>
+          <button type="submit" className="submit-btn">Submit</button>
         </form>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Registration
+export default Registration;

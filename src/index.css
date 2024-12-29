@@ -1,3 +1,104 @@
-.card{
+/* General reset and body styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa; /* Light grey background */
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Container that holds the form */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(135deg, #6c5ce7, #00b894);
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 380px;
+  transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Form styling */
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-input {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #6c5ce7;
+  box-shadow: 0 0 10px rgba(108, 92, 231, 0.3); /* Focus effect */
+}
+
+.submit-btn {
+  padding: 12px 0;
+  font-size: 16px;
+  background-color: #6c5ce7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #00b894; /* Change color on hover */
+  transform: translateY(-2px); /* Small hover effect */
+}
+
+.submit-btn:active {
+  transform: translateY(0); /* Reset after clicking */
+}
+
+.submit-btn:focus {
+  outline: none; /* Remove default outline */
 }
