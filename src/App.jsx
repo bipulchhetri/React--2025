@@ -56,6 +56,7 @@ import EventPropagration from './Event/EventPropagration'
 import Registration from './RegistrationForm/Registration'
 import UseRef from './Hooks/UseEffect'
 import UseEffectChallange from './Hooks/UseEffectChallange'
+import UseEffectClean from './Hooks/UseEffectClean'
 
 const App = () => {
   return (
@@ -72,6 +73,7 @@ const App = () => {
 {/* <Registration/> */}
 {/* <UseRef/> */}
 <UseEffectChallange/>
+<UseEffectClean/>
 
 </>
 
