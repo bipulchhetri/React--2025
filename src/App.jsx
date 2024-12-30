@@ -54,6 +54,7 @@ import { EventProps } from './Event/EventProps'
 import EventPropagration from './Event/EventPropagration'
 // import DerivedS from './State/DerivedS'
 import Registration from './RegistrationForm/Registration'
+import UseRef from './Hooks/UseRef'
 
 const App = () => {
   return (
@@ -67,7 +68,9 @@ const App = () => {
 {/* <EventProps/> */}
 {/* <EventPropagration/> */}
 {/* <DerivedS/> */}
-<Registration/>
+{/* <Registration/> */}
+<UseRef/>
+
 </>
 
   )

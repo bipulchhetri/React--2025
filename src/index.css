@@ -102,3 +102,11 @@ h2 {
 .submit-btn:focus {
   outline: none; /* Remove default outline */
 }
+
+.date{
+  font-size: 30px;
+  border: 2px solid rgb(247, 96, 41);
+  padding: 30px ;
+  text-align: center;
+  box-shadow: 2px 3px 5px 4px #333;
+}
