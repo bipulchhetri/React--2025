@@ -54,9 +54,9 @@ import { EventProps } from './Event/EventProps'
 import EventPropagration from './Event/EventPropagration'
 // import DerivedS from './State/DerivedS'
 import Registration from './RegistrationForm/Registration'
-import UseRef from './Hooks/UseEffect'
 import UseEffectChallange from './Hooks/UseEffectChallange'
 import UseEffectClean from './Hooks/UseEffectClean'
+import UseRef from './Hooks/UseRef/UseRef'
 
 const App = () => {
   return (
@@ -72,9 +72,9 @@ const App = () => {
 {/* <DerivedS/> */}
 {/* <Registration/> */}
 {/* <UseRef/> */}
-<UseEffectChallange/>
-<UseEffectClean/>
-
+{/* <UseEffectChallange/>
+<UseEffectClean/> */}
+<UseRef/>
 </>
 
   )
