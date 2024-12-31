@@ -57,6 +57,7 @@ import Registration from './RegistrationForm/Registration'
 import UseEffectChallange from './Hooks/UseEffectChallange'
 import UseEffectClean from './Hooks/UseEffectClean'
 import UseRef from './Hooks/UseRef/UseRef'
+import Props from './PropDriling/Props'
 
 const App = () => {
   return (
@@ -74,7 +75,8 @@ const App = () => {
 {/* <UseRef/> */}
 {/* <UseEffectChallange/>
 <UseEffectClean/> */}
-<UseRef/>
+{/* <UseRef/> */}
+<Props/>
 </>
 
   )
