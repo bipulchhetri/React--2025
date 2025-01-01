@@ -14,7 +14,7 @@ export default Props
 const Child=(props)=>{
     return(
     <>
-        <h2>I am child component</h2>
+        <h2>I am child compo</h2>
        <GrandChild data={props.data}/>
     </>
     )
