@@ -58,6 +58,8 @@ import UseEffectChallange from './Hooks/UseEffectChallange'
 import UseEffectClean from './Hooks/UseEffectClean'
 import UseRef from './Hooks/UseRef/UseRef'
 import Props from './PropDriling/Props'
+import { Home } from './Hooks/ContextApi/Home'
+import { BioProvider } from './Hooks/ContextApi'
 
 const App = () => {
   return (
@@ -76,7 +78,12 @@ const App = () => {
 {/* <UseEffectChallange/>
 <UseEffectClean/> */}
 {/* <UseRef/> */}
-<Props/>
+{/* <Props/> */}
+<BioProvider>
+<Home/>
+
+</BioProvider>
+
 </>
 
   )
