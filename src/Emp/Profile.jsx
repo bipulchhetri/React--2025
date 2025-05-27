@@ -1,154 +1,73 @@
-// import React from "react";
-// import { useLocation, useNavigate } from "react-router-dom";
+// Profile.js
+import React, { useState, useEffect } from 'react';
+import './Profile.css'; // We'll create this for styling
 
-// const Profile = () => {
-//   const location = useLocation();
-//   const navigate = useNavigate();
-//   const data = location.state;
+const LOCAL_STORAGE_KEY_STAFF = 'staffFormData'; // Must match the key in StaffForm
 
-//   if (!data) {
-//     return (
-//       <div className="text-center mt-10">
-//         <p>No data submitted. Please fill the form first.</p>
-//         <button
-//           onClick={() => navigate("/profile-form")}
-//           className="mt-4 px-4 py-2 bg-blue-600 text-white rounded"
-//         >
-//           Go to Form
-//         </button>
-//       </div>
-//     );
-//   }
+const Profile = () => {
+  const [staffData, setStaffData] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState('');
 
-//   return (
-//     <div className="max-w-xl mx-auto mt-10 p-6 bg-white shadow rounded-lg">
-//       <h2 className="text-2xl font-semibold mb-4">Profile Details</h2>
-//       <div className="space-y-2">
-//         {Object.entries(data).map(([key, value]) => (
-//           <div key={key} className="border-b pb-2">
-//             <strong>{key}:</strong> {value}
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
+  useEffect(() => {
+    setIsLoading(true);
+    setError('');
+    try {
+      const storedData = localStorage.getItem(LOCAL_STORAGE_KEY_STAFF);
+      if (storedData) {
+        const parsedData = JSON.parse(storedData);
+        setStaffData(parsedData);
+        console.log('Profile data fetched from local storage:', parsedData);
+      } else {
+        console.log('No staff data found in local storage for Profile.');
+        setStaffData(null); // Explicitly set to null if no data
+      }
+    } catch (err) {
+      console.error("Error parsing staff data from local storage for Profile:", err);
+      setError('Could not load staff data. It might be corrupted.');
+      setStaffData(null);
+    } finally {
+      setIsLoading(false);
+    }
+  }, []); // Empty dependency array means this runs once on mount
 
-// export default Profile;
+  // Optional: Add a way to re-fetch if needed, e.g., by listening to a custom event
+  // or if this component is part of a larger app with state management.
+  // For now, it fetches on mount. If StaffForm updates localStorage and this
+  // component is re-rendered (e.g. route change), it would show new data.
 
+  if (isLoading) {
+    return <div className="profile-container"><p>Loading profile data...</p></div>;
+  }
 
+  if (error) {
+    return <div className="profile-container error-message"><p>{error}</p></div>;
+  }
 
-import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
-import "./ProfileDetails.css";
-
-const ProfileDetails = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-  const data = location.state;
-
-  if (!data) {
-    return (
-      <div className="centered">
-        <p>No data submitted.</p>
-        <button onClick={() => navigate("/profile-form")}>Go Back</button>
-      </div>
-    );
+  if (!staffData) {
+    return <div className="profile-container"><p>No staff data available to display.</p></div>;
   }
 
   return (
     <div className="profile-container">
-      <div className="profile-card">
-        <div className="left-column">
-          <div className="avatar-section">
-            <div className="avatar" />
-            <h2>{data.name || "Name"}</h2>
-            <div className="social-icons">
-              {data.linkedin && <a href={data.linkedin}>🔗</a>}
-              {data.facebook && <a href={data.facebook}>📘</a>}
-              {data.github && <a href={data.github}>💻</a>}
-            </div>
-          </div>
-
-          <div className="contact-card">
-            {data.email && (
-              <div>
-                📧 <span>{data.email}</span>
-              </div>
-            )}
-            {data.phone && (
-              <div>
-                📞 <span>{data.phone}</span>
-              </div>
-            )}
-            {data.education && (
-              <div>
-                🎓 <span>{data.education}</span>
-              </div>
-            )}
-            {data.jobTitle && (
-              <div>
-                💼 <span>{data.jobTitle}</span>
-              </div>
-            )}
-            <div>Direct manager: 🧑‍💼</div>
-          </div>
-        </div>
-
-        <div className="right-column">
-          <h3>General Information</h3>
-          <div className="info-grid">
-            <div>Staff code</div>
-            <div>{data.staffCode || "0001"}</div>
-            <div>Staff name</div>
-            <div>{data.name}</div>
-            <div>Gender</div>
-            <div>{data.gender || "N/A"}</div>
-            <div>Birthday</div>
-            <div>{data.dob || "N/A"}</div>
-            <div>Phone</div>
-            <div>{data.phone}</div>
-            <div>Workplace</div>
-            <div>{data.workplace || "N/A"}</div>
-            <div>Status</div>
-            <div>{data.status || "Full-time"}</div>
-            <div>Job Position</div>
-            <div>{data.jobTitle || "N/A"}</div>
-            <div>Academic level</div>
-            <div>{data.education || "N/A"}</div>
-            <div>Hourly Rate</div>
-            <div>{data.hourlyRate || "₹120.00"}</div>
-            <div>Religion</div>
-            <div>{data.religion || "Hindu"}</div>
-            <div>Nation</div>
-            <div>{data.nation || "India"}</div>
-            <div>Marital Status</div>
-            <div>{data.maritalStatus || "N/A"}</div>
-          </div>
-
-          <h3>Related Information</h3>
-          <div className="info-grid">
-            <div>Citizen ID</div>
-            <div>{data.citizenId || "Aadhar Card"}</div>
-            <div>Date of Issue</div>
-            <div>{data.issueDate || "03rd May 2012"}</div>
-            <div>Place of Birth</div>
-            <div>{data.birthPlace || "Mumbai"}</div>
-            <div>Current Address</div>
-            <div>{data.address || "N/A"}</div>
-            <div>Bank A/C No.</div>
-            <div>{data.bankAccount || "**********"}</div>
-            <div>Bank Branch</div>
-            <div>{data.bankBranch || "N/A"}</div>
-            <div>Bank Name</div>
-            <div>{data.bankName || "State Bank of India"}</div>
-            <div>Personal Tax Code</div>
-            <div>{data.taxCode || "ABCD1234"}</div>
-          </div>
-        </div>
+      <h2>Staff Profile Information</h2>
+      <div className="profile-section">
+        <h3>Staff Details</h3>
+        <p><strong>Name:</strong> {staffData.name || 'N/A'}</p>
+        <p><strong>Age:</strong> {staffData.age || 'N/A'}</p>
+        <p><strong>Employee ID:</strong> {staffData.employeeId || 'N/A'}</p>
+        <p><strong>Date of Birth:</strong> {staffData.dateOfBirth || 'N/A'}</p>
+      </div>
+      <div className="profile-section">
+        <h3>Additional Info</h3>
+        <p><strong>Primary Address:</strong> {staffData.primaryAddress || 'N/A'}</p>
+        <p><strong>Secondary Address:</strong> {staffData.secondaryAddress || 'N/A'}</p>
+        <p><strong>LinkedIn:</strong> {staffData.linkedin ? <a href={staffData.linkedin} target="_blank" rel="noopener noreferrer">{staffData.linkedin}</a> : 'N/A'}</p>
+        <p><strong>Facebook:</strong> {staffData.facebook ? <a href={staffData.facebook} target="_blank" rel="noopener noreferrer">{staffData.facebook}</a> : 'N/A'}</p>
+        <p><strong>GitHub:</strong> {staffData.github ? <a href={staffData.github} target="_blank" rel="noopener noreferrer">{staffData.github}</a> : 'N/A'}</p>
       </div>
     </div>
   );
 };
 
-export default ProfileDetails;
+export default Profile;

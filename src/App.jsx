@@ -2,20 +2,20 @@
 
 
 
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import EmployeeForm from "./Emp/EmployeeForm";
-import Profile from "./Emp/Profile";
+// import React from "react";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import UserProfileForm from "./Emp/StaffProfileForm";
+// import ProfileFields from "./Emp/Profile";
 
-const App = () => {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<EmployeeForm />} />
-        <Route path="/Profile" element={<Profile />} />
-      </Routes>
-    </Router>
-  );
-};
+// const App = () => {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/" element={<UserProfileForm />} />
+//         <Route path="/ProfileDetails" element={<ProfileFields />} />
+//       </Routes>
+//     </Router>
+//   );
+// };
 
-export default App;
+// export default App;
