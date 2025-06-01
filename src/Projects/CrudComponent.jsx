@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import './CrudNew.css'
 const CrudComponent = () => {
     const [items, setItems] = useState([]); // List of items
     const [input, setInput] = useState(''); // Current input value
