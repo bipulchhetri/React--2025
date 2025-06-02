@@ -26,6 +26,8 @@ import AddProduct from './Learn Api/AddProduct'
 import ShowProduct from './Learn Api/ShowProduct'
 import CrudComponent from './Projects/CrudComponent'
 import CrudNew from './Projects/CrudNew'
+import Registration from './RegistrationForm/Registration'
+import NewRegistration from './RegistrationForm/NewRegistration'
 
 const App = () => {
   const [newProduct, setNewProduct] = useState(null);
@@ -33,7 +35,9 @@ const App = () => {
 
   return (
     <>
-    <CrudNew/>
+    <NewRegistration/>
+    {/* <Registration/> */}
+    {/* <CrudNew/> */}
     {/* <UseState/> */}
     {/* <ProductList/>
     <CrudComponent/> */}

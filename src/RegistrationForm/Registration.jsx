@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import "../index.css";  // Import the updated CSS
 
 function Registration() {
-  const [data, setData] = useState({
-    name:" ",
-    email:" ",
-  });
+  const [data, setData] = useState([]);
 
   const handleChange = (e) => {
     const {name,value}=e.target;
@@ -62,9 +59,14 @@ function Registration() {
           </div>
           <button type="submit" className="submit-btn">Submit</button>
         </form>
+        <h2>{data.name}</h2> 
+        <h2>{data.email}</h2>
       </div>
     </div>
   );
 }
 
 export default Registration;
+
+
+
