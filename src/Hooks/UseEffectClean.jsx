@@ -6,7 +6,7 @@ const UseEffectClean = () => {
        const timer= setInterval(()=>{
             setviews((prev)=>prev+1);
         },1000);
-       return()=> clearInterval(timer);
+       return()=> clearInterval(timer); //clean up function in useEffect
     },[]);
    
   return (
