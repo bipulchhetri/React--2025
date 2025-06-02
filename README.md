@@ -56,16 +56,13 @@ Welcome! This repository contains all the key concepts and mini-projects I have 
 
 ## 🔗 Links
 
-- 🌐 **Live Projects (if any):** [Link Here](#)
+- 🌐 **Live Projects :** [Link Here](#)
 - 💼 **LinkedIn:** [linkedin.com/in/yourprofile](https://www.linkedin.com/in/yourprofile)
 - 🐙 **GitHub:** [github.com/your-username](https://github.com/your-username)
 - 🌍 **Portfolio:** [yourportfolio.com](https://yourportfolio.com)
 
 ---
 
-## ⭐️ Support My Journey
-
-If you find this helpful, consider giving a ⭐️ to support my work and learning!
 
 | Project Name      | GitHub Code                     | Demo                         |
 |-------------------|---------------------------------|-----------------------------|
@@ -74,3 +71,6 @@ If you find this helpful, consider giving a ⭐️ to support my work and learni
 | Example Project 3 | [GitHub Link](https://github.com/) | [Demo Link](https://example.com/) |
 
 
+## ⭐️ Support My Journey
+
+If you find this helpful, consider giving a ⭐️ to support my work and learning!
