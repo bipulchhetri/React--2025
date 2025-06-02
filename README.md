@@ -56,10 +56,10 @@ Welcome! This repository contains all the key concepts and mini-projects I have 
 
 ## 🔗 Links
 
-- 🌐 **Live Projects :** [Link Here](#)
-- 💼 **LinkedIn:** [linkedin.com/in/yourprofile](https://www.linkedin.com/in/yourprofile)
-- 🐙 **GitHub:** [github.com/your-username](https://github.com/your-username)
-- 🌍 **Portfolio:** [yourportfolio.com](https://yourportfolio.com)
+- 🌐 **Live Projects :** [Coming Soon](#)
+- 💼 **LinkedIn:** [linkedin.com/in/bipulchhetri](https://www.linkedin.com/in/bipul-chhetri/)
+- 🐙 **GitHub:** [github.com/bipulchhetrti](https://github.com/bipulchhetri)
+- 🌍 **Portfolio:** [yourportfolio.com](Coming Soon)
 
 ---
 
