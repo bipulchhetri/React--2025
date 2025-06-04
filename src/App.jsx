@@ -28,6 +28,7 @@ import CrudComponent from './Projects/CrudComponent'
 import CrudNew from './Projects/CrudNew'
 import Registration from './RegistrationForm/Registration'
 import NewRegistration from './RegistrationForm/NewRegistration'
+import Useref from './Hooks/UseRef/Useref'
 
 const App = () => {
   const [newProduct, setNewProduct] = useState(null);
@@ -35,7 +36,8 @@ const App = () => {
 
   return (
     <>
-    <NewRegistration/>
+    <Useref/>
+    {/* <NewRegistration/> */}
     {/* <Registration/> */}
     {/* <CrudNew/> */}
     {/* <UseState/> */}
